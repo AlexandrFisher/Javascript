@@ -325,13 +325,13 @@
 // code block
 // }
 
-for (var count= 0; count < 10; count ++)
-{
-    console.log(count);
-    for(var inner= 0; inner<3; inner++){
-        console.log(inner)
-    }
-}
+// for (var count= 0; count < 10; count ++)
+// {
+//     console.log(count);
+//     for(var inner= 0; inner<3; inner++){
+//         console.log(inner)
+//     }
+// }
 
 // // notes
 
@@ -341,7 +341,25 @@ for (var count= 0; count < 10; count ++)
 // A variable assigned to an empty array
 // var arrayName = []
 
-// var lottoNums = [];
+// var lottoNum = [];
+
+// lottoNum.push(3);
+
+// console.log(lottoNum);
+
+// lottoNum.push(34);
+
+// console.log(lottoNum)
+
+// lottoNum.pop();
+// console.log(lottoNum)
+
+// outcome
+// [ 3 ]
+// [ 3, 34 ]
+// [ 3 ]
+
+
 
 // // notes
 
@@ -370,6 +388,8 @@ for (var count= 0; count < 10; count ++)
 // A variable assigned to an array of numbers
 
 // var lottoNums = [23, 11, 43, 19, 37, 16];
+// console.log(lottoNums[2]);
+//outcome will be 43 .. remember lists start with 0..23 1..11 2..43 3..19 4.37..
 
 // // notes
 
@@ -441,9 +461,9 @@ for (var count= 0; count < 10; count ++)
 
 
 // var lottoNums = 
-// [23, 11, 43, 19, 37 16];
+// [23, 11, 43, 19, 37, 16];
 // var arrayOfSplicedValues = 
-// lottoNums.splice(2, 1);
+// lottoNums.splice(2, 2);
 // console.log(arrayOfSplicedValues);
 
 // Multiple values
@@ -486,9 +506,17 @@ for (var count= 0; count < 10; count ++)
 
 // Converting a string to an array of words
 
-// var words = 
-// 'oh hey how is it going'.split('');
-// console.log(words);
+// var words ='oh hey how is it going';
+// var newArray = words.split('');
+// newArray.reverse();
+// word2 = newArray.join('')
+// console.log(word2) 
+//outcome | gniog ti si woh yeh ho|
+// console.log(reverse);
+// console.log(newArray);
+// var newArray = words.split("");
+
+// console.log(newArray);
 // // ["oh", "hey", "how", "is", "it", "going"]
 
 
@@ -538,9 +566,23 @@ for (var count= 0; count < 10; count ++)
 //     title: 'sir',
 //     powers: 'invent the web'
 // }
-
+//  console.log(characterSheet["name"])
 
 // // notes
+// var characterSheet = {
+//     name: 'tim berners-lee',
+//     title: 'sir',
+//     powers: 'invent the web'
+// } 
+
+// var key= "name";
+
+// var keys = ["name", "title", "powers"]
+//  for (var index = 0; index < keys.length; index++){
+//      var keyName = keys[index];
+//      console.log(characterSheet[keyname]);A
+//  }
+// console.log(characterSheet[key])
 
 
 // _________________________________________________________________
@@ -656,8 +698,13 @@ for (var count= 0; count < 10; count ++)
 //   }
 
 // // notes
+function hello(fname, lname){
+    console.log("hello" + fname + " " + lname);
+    
+}
 
-
+myReturn = hello("Alina", "Belova")
+console.log(myReturn)
 // ________________________________________________________________
 
 
