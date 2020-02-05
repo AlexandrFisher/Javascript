@@ -93,44 +93,65 @@
 // printBanner('All this coding is making my head hurt')
 
 //assignment 8
-function leetSpeak(leettext) {
+// function leetSpeak(leettext) {
+//     let newText = "";
+//     for (let i = 0; i < leettext.length; i++) {
+//       let character = leettext[i];
+//       switch (character.toUpperCase()) {
+//         case "A": {
+//           character = "4";
+//           break;
+//         }
+//         case "E": {
+//           character = "3";
+//           break;
+//         }
+//         case "G": {
+//           character = "6";
+//           break;
+//         }
+//         case "L": {
+//           character = "1";
+//           break;
+//         }
+//         case "O": {
+//           character = "0";
+//           break;
+//         }
+//         case "S": {
+//           character = "5";
+//           break;
+//         }
+//         case "T": {
+//           character = "7";
+//           break;
+//         }
+//       }
+//       newText += character;
+//     }
+  
+//     return newText;
+//   }
+  
+//   console.log(leetSpeak("Leet"));
+
+// assignment 10
+function Vowels(text) {
     let newText = "";
-    for (let i = 0; i < leettext.length; i++) {
-      let character = leettext[i];
-      switch (character.toUpperCase()) {
-        case "A": {
-          character = "4";
-          break;
-        }
-        case "E": {
-          character = "3";
-          break;
-        }
-        case "G": {
-          character = "6";
-          break;
-        }
-        case "L": {
-          character = "1";
-          break;
-        }
-        case "O": {
-          character = "0";
-          break;
-        }
-        case "S": {
-          character = "5";
-          break;
-        }
-        case "T": {
-          character = "7";
-          break;
-        }
+    for (let i = 0; i < text.length; i++) {
+      let character = text[i];
+      if (
+        character == "a" ||
+        character == "e" || 
+        character == "i" ||
+        character == "o" ||
+        character == "u"
+      ) {
+        character = concat.character.repeat(5);
       }
       newText += character;
     }
-  
     return newText;
   }
   
-  console.log(leetSpeak("Leet"));
+  console.log(Vowels("cheese"));
