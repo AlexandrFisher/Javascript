@@ -1,7 +1,7 @@
 // assignment 1
 
 
-// function madlib(name,subject) {
+// let madlib= (name,subject) => {
 //     return name + '\'s favorite subject in school is ' + subject + '.';
 // }
 // var result = madlib('Alex', 'Math');
@@ -10,7 +10,7 @@
 
 // assignment 2
 
-// function tipAmount(bill,service){
+// let tipAmount = (bill,service)=>{
 //     if (service == 'good') { 
 //         return 'The tip is $' + bill * .20          
 //     } else if (service == 'fair') {
@@ -26,7 +26,7 @@
 
 // assignment3
 
-// function totalAmount(bill,service){
+// let totalAmount= (bill,service)=>{
 //    if (service == 'good') {
 //        tipAmount = bill * .20;                
 //        total = bill + tipAmount;              
@@ -60,7 +60,7 @@
 // assignment 5
 
 // drawSquare(5);
-// function drawSquare(five){
+// let drawSquare=(five)=>{
 //   var square="";
 //   for(i=0;i<five;i++){    
 //     for (j=0; j<five;j++) {
@@ -72,7 +72,7 @@
 // }
 
 // // assignment 6
-// function printBox(width, height) {
+// let printBox=(width, height)=> {
 //     for (let i = 0; i < height; i++) {    
 //         if (i === 0 || i === height -1) {  
 //             console.log('*'.repeat(width));  
@@ -85,14 +85,14 @@
 
 
 // // assignment 7
-// function printBanner(Text) {
+// let printBanner= (Text)=> {
 // console.log('*'.repeat(Text.length+4))  
 // console.log('* ' + Text + ' *');
 // console.log('*'.repeat(Text.length+4)) 
 // }
 // printBanner('All this coding is making my head hurt')
 
-//assignment 8
+// assignment 8
 // function leetSpeak(leettext) {
 //     let newText = "";
 //     for (let i = 0; i < leettext.length; i++) {
@@ -136,22 +136,22 @@
 //   console.log(leetSpeak("Leet"));
 
 // assignment 10
-function Vowels(text) {
-    let newText = "";
-    for (let i = 0; i < text.length; i++) {
-      let character = text[i];
-      if (
-        character == "a" ||
-        character == "e" || 
-        character == "i" ||
-        character == "o" ||
-        character == "u"
-      ) {
-        character = concat.character.repeat(5);
-      }
-      newText += character;
-    }
-    return newText;
-  }
+// function Vowels(text) {
+//     let newText = "";
+//     for (let i = 0; i < text.length; i++) {
+//       let character = text[i];
+//       if (
+//         character == "a" ||
+//         character == "e" || 
+//         character == "i" ||
+//         character == "o" ||
+//         character == "u"
+//       ) {
+//         character = concat.character.repeat(5);
+//       }
+//       newText += character;
+//     }
+//     return newText;
+//   }
   
-  console.log(Vowels("cheese"));
+//   console.log(Vowels("cheese"));
